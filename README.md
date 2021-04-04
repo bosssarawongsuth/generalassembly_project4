@@ -65,8 +65,15 @@ The data provided are the locations of West Nile virus (train & test datasets) ,
 The model that scored the highest ROCAUC is XGBoost, followed by Random Forest, Logistic Regression and Extra Tree. However, the differences are very small differing by only around 0.01. However, when it comes to scoring on Kaggle on the testing set, XGBoost performed the worst compared to the other models. This could be attributed to the fact that XGBoost suffers from high variance resulting in bad generalisation. On the testing set, Logistic Regression seems to be more generalised (lower variance). The model scored the best on the testing/Kaggle data with the ROCAUC score of 0.756 and thus we will consider this model to be the most useful for the purpose of this study.
 
 ### Conclusion
+With our goal to predict when and where different species of mosquitoes will test positive for WNV, we created several classification models to predict the presence of the virus. Among all the regression algorithms that we used, we found that Logistic Regression performed well compared than other model and the baseline. Given that it seems to be more generalised (lower variance) than other models, it scored the best on the testing data with the ROCAUC score of 0.756 and thus we will consider this model to be the most useful for this study.
 
+Out of all the predictors for the model, we found that average temperature was the top predictor with the exponential coefficient at about 160. On the other hand, location was not a strong predictor in our best model, but weather and week of year were more important features.
 
+Regarding cost benefit analysis, we found that the spray should be used to reduce number of mosquitos. Additionally, the spray cost for Chicago would be \\$900,000 and the total cost for the infected person would be \\$28,570. Hence, the spray cost will cover only 30 severe WNV cases. The target areas from the model have the total area at 50.5 square kilometer which requires \\$74,300 of spray cost. If the spray were to be used, Chicago Council should spray more in summer (August) because this month had more risk of WNV in human from the virus-carrying mosquitoes
+
+### Recommendations
+- The sub-urban in Chicago has more risk from WNV due to the poor sanitation system in the older houses compared to new houses [[Source]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7241786/). Therefore, the Chicago council should give the sanitation maintenance to the old houses.
+- We recommend to always spray to prevent the high medical cost and economic loss, and the spray help Chicago to prevent the unpredictability of WNV outbreaks in people
 
 
 
